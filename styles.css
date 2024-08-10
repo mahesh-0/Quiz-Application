@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+#game-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #cccccc;
+}
+
+#category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-item {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.category-item.disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#answer-options {
+    display: flex;
+    flex-direction: column;
+}
+
+.answer-option {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.answer-option.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+#results {
+    text-align: center;
+}
